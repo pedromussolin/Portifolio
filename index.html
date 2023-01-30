@@ -1,47 +1,119 @@
 <!DOCTYPE html>
-    <html>
-        <link rel="stylesheet" href="index.css">
+<html>
 
-        <head>
-            <title>Pedro Mussolin</title>
-            <link rel="icon" type="image/png" href="image/hacker.png">
-            <meta charset="utf-8" />
-        </head>
+<head>
+    <title>Portifólio - Pedro Mussolin</title>
+    <link rel="icon" type="image/png" href="image/hacker.png">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+</head>
 
-        <div class="header">
-            <header>
-                <div id="cabecalho">
-                    <img src="image/programming-language.png" width="50px" height="50px" class="logo-image">
-                </div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Conhecimentos</a></li>
-                        <li><a href="#">Links</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
+<header>
 
-            <!--Content before waves-->
-            <div class="inner-header flex">
-            <h1>Pedro Mussolin</h1>
+</header>
+
+<body>
+    <div class="sidebar">
+        <div class="conteudo_logo">
+            <div class="logo">
+                <i class='bx bx-bracket'></i>
+                <div class="logo_name">Pedro Mussolin</div>
             </div>
-            <!--Waves Container-->
-            <div>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-            </svg>
+            <i class='bx bx-menu' id="button"></i>
         </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="links_name">Sobre</span>
+                </a>
+                <span class="tooltip">Sobre</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-python'></i>
+                    <span class="links_name">Conhecimentos</span>
+                </a>
+                <span class="tooltip">Conhecimentos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-link'></i>
+                    <span class="links_name">Links</span>
+                </a>
+                <span class="tooltip">Links</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contatos</span>
+                </a>
+                <span class="tooltip">Contatos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-folder-open'></i>
+                    <span class="links_name">Projetos</span>
+                </a>
+                <span class="tooltip">Projetos</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="image\unnamed.jpg">
+                    <div class="name_job">
+                        <div class="name">Pedro Mussolin</div>
+                        <div class="job">Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <span class="text_name" id="text_name">Software<br></span>
+        <span class="text_name" id="text_name2">Developer<br></span>
+    </div>
+    <div class="container">
+        <div class="lista_icones">
+            <ul>
+                <li>
+                    <img id="js" src="image/js.png">
+                </li>
+                <li>
+                    <img id="html" src="image/html-5.png">
+                </li>
+                <li>
+                    <img id="css" src="image/css-3.png">
+                </li>
+                <li>
+                    <img id="c" src="image/letter-c.png">
+                </li>
+                <li>
+                    <img id="py" src="image/python.png">
+                </li>
+                <li>
+                    <img id="linux" src="image/linux.png">
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    </html>
+    <script>
+        let button = document.querySelector("#button");
+        let sidebar = document.querySelector(".sidebar");
+
+        button.onclick = function () {
+            sidebar.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

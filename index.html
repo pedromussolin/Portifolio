@@ -1,119 +1,84 @@
 <!DOCTYPE html>
-<html>
+    <html>
+        <head>
+            <title>Portifólio - Pedro Mussolin</title>
+            <link rel="icon" type="image/png" href="image/hacker.png">
+            <link rel="stylesheet" href="index.css">
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <meta charset="UTF-8" />
+        </head>
 
-<head>
-    <title>Portifólio - Pedro Mussolin</title>
-    <link rel="icon" type="image/png" href="image/hacker.png">
-    <link rel="stylesheet" href="index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta charset="UTF-8" />
-</head>
-
-<header>
-
-</header>
-
-<body>
-    <div class="sidebar">
-        <div class="conteudo_logo">
-            <div class="logo">
-                <i class='bx bx-bracket'></i>
-                <div class="logo_name">Pedro Mussolin</div>
-            </div>
-            <i class='bx bx-menu' id="button"></i>
-        </div>
-        <ul class="nav_list">
-            <li>
-                <a href="#">
-                    <i class='bx bxs-home'></i>
-                    <span class="links_name">Home</span>
-                </a>
-                <span class="tooltip">Home</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-grid-alt'></i>
-                    <span class="links_name">Sobre</span>
-                </a>
-                <span class="tooltip">Sobre</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxl-python'></i>
-                    <span class="links_name">Conhecimentos</span>
-                </a>
-                <span class="tooltip">Conhecimentos</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-link'></i>
-                    <span class="links_name">Links</span>
-                </a>
-                <span class="tooltip">Links</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-contact'></i>
-                    <span class="links_name">Contatos</span>
-                </a>
-                <span class="tooltip">Contatos</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-folder-open'></i>
-                    <span class="links_name">Projetos</span>
-                </a>
-                <span class="tooltip">Projetos</span>
-            </li>
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="image\unnamed.jpg">
-                    <div class="name_job">
-                        <div class="name">Pedro Mussolin</div>
-                        <div class="job">Developer</div>
-                    </div>
+        <header>
+            <div class="topbar"> 
+                <div class="logo">
+                    <i class='bx bx-bracket'></i>
+                    <a href="#"><div class="logo_name">Pedro Mussolin</div></a>
                 </div>
+                
+                <ul class="nav_list">
+                    <li class="itens-nav-list">
+                        <a href="#home">
+                            <span class="nav_names">Home.</span>
+                        </a>
+                        <!-- <span class="tooltip">Home</span> -->
+                    </li>
+                    <li class="itens-nav-list">
+                        <a href="#about">
+                            <span class="nav_names">About.</span>
+                        </a>
+                        <!-- <span class="tooltip">Sobre</span> -->
+                    </li>
+                    <li class="itens-nav-list">
+                        <a href="#">
+                            <span class="nav_names">Knowledge.</span>
+                        </a>
+                        <!-- <span class="tooltip">Conhecimentos</span> -->
+                    </li>
+                    <li class="itens-nav-list">
+                        <a href="#">
+                            <span class="nav_names">Links.</span>
+                        </a>
+                        <!-- <span class="tooltip">Links</span> -->
+                    </li>
+                    <li class="itens-nav-list">
+                        <a href="#">
+                            <span class="nav_names">Contact.</span>
+                        </a>
+                        <!-- <span class="tooltip">Contatos</span> -->
+                    </li>
+                    <li class="itens-nav-list">
+                        <a href="#">
+                            <span class="nav_names">Projects.</span>
+                        </a>
+                        <!-- <span class="tooltip">Projetos</span> -->
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-    <div class="home_content">
-        <span class="text_name" id="text_name">Software<br></span>
-        <span class="text_name" id="text_name2">Developer<br></span>
-    </div>
-    <div class="container">
-        <div class="lista_icones">
-            <ul>
-                <li>
-                    <img id="js" src="image/js.png">
-                </li>
-                <li>
-                    <img id="html" src="image/html-5.png">
-                </li>
-                <li>
-                    <img id="css" src="image/css-3.png">
-                </li>
-                <li>
-                    <img id="c" src="image/letter-c.png">
-                </li>
-                <li>
-                    <img id="py" src="image/python.png">
-                </li>
-                <li>
-                    <img id="linux" src="image/linux.png">
-                </li>
-            </ul>
-        </div>
-    </div>
+        </header>
 
-    <script>
-        let button = document.querySelector("#button");
-        let sidebar = document.querySelector(".sidebar");
+        <body>
+            <section id="home">
+                <div id="home-content" class="flex">
+                    <div id="main-introduction">
+                        <p class="introduction-1">Hello! my name is </p>
+                        <p class="introduction-1" style="color: #7b00ab;">&nbsp;Pedro</p>
+                        <p class="introduction-1">&nbsp;and i'm a</p>
+                        <!-- <p id="introduction-p">Pedro and i am a</p> -->
+                    </div>
+    
+                    <ul id="introduction-ul">
+                        <li id="li-one">Back-end developer.</li>
+                        <li id="li-two">Systems analysis and development.</li>
+                        <li id="li-three">Analytics and RPA dev.</li>
+                    </ul>
+                </div>
+            </section>
+          
+            <section id="about">
+                <img id="image-about" href="https://storyset.com/work" src="image/Top secret-amico.svg">
+            </section>
+          
 
-        button.onclick = function () {
-            sidebar.classList.toggle("active")
-        }
-    </script>
-</body>
-</html>
+        </body>
+
+    </html>
